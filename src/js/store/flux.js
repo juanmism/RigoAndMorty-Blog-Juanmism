@@ -1,45 +1,59 @@
 const getState = ({ getStore, getActions, setStore }) => {
-	return {
+	return { 
 		store: {
-			demo: [
+			characters: [],
+			favorites: [],
+			next: "",
+			prev: "",
+		  },
+		  actions: {
+			getCharacters: async () => {
+			  const response = await fetch(
+				`https://rickandmortyapi.com/api/character`,
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+				  method: "GET",
 				}
-			]
-		},
-		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			  );
+			 
+			  const data = await response.json();
+			  console.log(data);
+	  
+			  setStore({ characters: data.results, next: data.info.next });
 			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
+			
+			setFavorites: (index) => {
+				console.log(index);
+				let xx = [...getStore().characters];
+				console.log(xx[index]);
+
+				//setStore({ favorites: characters[index] })
 			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
 
-				//reset the global store
-				setStore({ demo: demo });
-			}
-		}
-	};
-};
 
-export default getState;
+
+			/**setCharacters: (data) => {
+			  setStore({
+				characters: data.results,
+				next: data.info.next,
+				prev: data.info.prev,
+			  });
+			},
+			setFavorites: (data) => {
+			  setStore({ favorites: getStore().favorites.concat(data) });
+			  console.log(getStore);
+			},
+	  
+			deleteFavorites: (name) => {
+			  setStore({
+				favorites: getStore().favorites.filter(
+				  (favorites) => favorites.name !== name
+				),
+			  });
+			},
+			*/
+		  },
+		};
+	  };
+	  
+	  export default getState;

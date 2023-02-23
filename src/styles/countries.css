@@ -1,0 +1,4 @@
+.div-countries {
+    display: flex;
+    justify-content: space-around;
+}
