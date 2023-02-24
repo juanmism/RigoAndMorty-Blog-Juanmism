@@ -1,7 +1,7 @@
 import React from "react";
 import { Favorites } from "./favorites";
 import { Link } from "react-router-dom";
-import globo from "../../img/globo.webp";
+import globo from "../../img/R_M_collab_logo.webp";
 import "../../styles/navbar.css"
 
 export const Navbar = () => {
@@ -12,10 +12,10 @@ export const Navbar = () => {
 			<img src={globo} width="150" height="150"/>
 			</span>
 		</Link>
-		<h1 className="h1-navbar">World's Countries</h1>
+		<h1 className="h1-navbar">Ricky And Morti</h1>
 		<div className="ml-auto">
 			<Link to="/countries">
-				<button type="button" className="btn btn-primary">Go to Countries</button>
+				<button type="button" className="btn btn-secondary">Characters</button>
 			</Link>	
 			<Favorites/>
 		</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import homeImage from "../../img/bodyCountries.jpg";
+import homeImage from "../../img/bodyImg.jpg";
 import "../../styles/home.css";
 
 export const Home = () => (

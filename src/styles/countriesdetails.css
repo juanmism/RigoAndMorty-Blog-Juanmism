@@ -1,0 +1,15 @@
+.card-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.div-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-detail {
+   background-color:  rgb(228, 171, 13);
+}

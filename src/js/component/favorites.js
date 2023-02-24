@@ -9,7 +9,7 @@ export const Favorites = () => {
     
     return(
         <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      <Dropdown.Toggle variant="warning" id="dropdown-basic">
         Favorites {store.favorites.length}
       </Dropdown.Toggle>
       <Dropdown.Menu>
