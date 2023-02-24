@@ -1,4 +1,5 @@
 import React from "react";
+import { Favorites } from "./favorites";
 import { Link } from "react-router-dom";
 import globo from "../../img/globo.webp";
 import "../../styles/navbar.css"
@@ -16,7 +17,7 @@ export const Navbar = () => {
 			<Link to="/countries">
 				<button type="button" className="btn btn-primary">Go to Countries</button>
 			</Link>	
-			<button type="button" className="btn btn-dark">Favoritos</button>
+			<Favorites/>
 		</div>
 	</nav>
 	);

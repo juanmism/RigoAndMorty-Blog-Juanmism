@@ -26,9 +26,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 				let xx = [...getStore().characters];
 				console.log(xx[index]);
 
-				//setStore({ favorites: characters[index] })
+				setStore({ favorites: [...getStore().favorites, xx[index] ]})
 			},
+			
+			deleteFavorites: (index) => {
+				let xxx = [...getStore().favorites];
+				xxx.splice(index, 1);
+				setStore({favorites : xxx});
 
+			}
 
 
 
