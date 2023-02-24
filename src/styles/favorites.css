@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
 
-.btn-Navbar {
+.number-fav {
+    background-color: red;
     color: white;
+    border-radius: 50px;
 }
 
-.nav-main {
+.letter-fav {
+    color: white;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.drop-scroll {
     background-color: black;
-}
-
-.h1-navbar {
     color: white;
-    font-family: 'Shantell Sans', cursive;
-}
-
-.chara-nav {
-    font-family: 'Shantell Sans', cursive;
 }

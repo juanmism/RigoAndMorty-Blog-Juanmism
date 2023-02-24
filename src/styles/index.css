@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
     a{
-        color: rgb(95, 190, 32);
+        color: #ffc107;
 }
       
     a:hover{
@@ -10,6 +10,7 @@
     a:active{
         color: white;
 }
- button{
-        color: black;
- }
+
+body {
+    font-family: 'Shantell Sans', cursive;
+}
