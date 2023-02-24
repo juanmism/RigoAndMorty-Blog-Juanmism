@@ -10,7 +10,7 @@ export const Favorites = () => {
     return(
       <Dropdown>
         <Dropdown.Toggle className="letter-fav" variant="warning" id="dropdown-basic">
-          Favorites <i className="number-fav">&nbsp;&nbsp;{store.favorites.length}&nbsp;&nbsp;</i>
+          Favorites <i className="number-fav">&nbsp;{store.favorites.length}&nbsp;</i>
           </Dropdown.Toggle>
             <Dropdown.Menu>
                   {store.favorites.map((el, index) => {
