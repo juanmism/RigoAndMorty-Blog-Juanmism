@@ -12,7 +12,7 @@ export const Navbar = () => {
 				<img src={globo} width="150" height="150"/>
 				</span>
 			</Link>
-			<h1 className="h1-navbar">Ricky & Morti</h1>
+			<h1 className="h1-navbar">Rick & Morty</h1>
 			<div className="ml-auto">
 			<Link to="/countries">
 				<button type="button" className="chara-nav btn btn-success">Characters</button>
