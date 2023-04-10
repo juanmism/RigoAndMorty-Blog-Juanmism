@@ -1,4 +1,4 @@
-# ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) Starwars Blog Reading List
+# ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) Rigo And Morty Blog Reading List
 
 ![screenshot](https://github.com/juanmism/4Geeks-Star-Wars-Blog-Juanmism/blob/master/20230410_184425.gif)
 
