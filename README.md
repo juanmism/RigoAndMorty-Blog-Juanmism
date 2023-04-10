@@ -1,6 +1,6 @@
 # ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) Starwars Blog Reading List
 
-![screenshot](https://raw.githubusercontent.com/m4n50n/starwars_blog_reading_list/main/screenshot_preview.png)
+![screenshot](https://github.com/juanmism/4Geeks-Star-Wars-Blog-Juanmism/blob/master/20230410_184425.gif)
 
 ✏ *Building a minimalist version of the Rigo and Morty Databank.
 
